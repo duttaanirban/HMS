@@ -18,7 +18,7 @@ const stats = [
   { title: "Upcoming Appointments", value: 3, icon: Calendar, variant: "primary" as const },
   { title: "Medical Records", value: 12, icon: FileText, variant: "success" as const },
   { title: "Prescriptions", value: 5, icon: Pill, variant: "warning" as const },
-  { title: "Pending Bills", value: "$245", icon: CreditCard, variant: "accent" as const },
+  { title: "Pending Bills", value: "₹245", icon: CreditCard, variant: "accent" as const },
 ];
 
 const upcomingAppointments: Appointment[] = [

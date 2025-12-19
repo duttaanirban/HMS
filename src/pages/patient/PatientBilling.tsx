@@ -108,7 +108,7 @@ export default function PatientBilling() {
             <div className="flex items-start justify-between">
               <div>
                 <p className="text-muted-foreground text-sm mb-1">Total Amount</p>
-                <p className="text-2xl font-bold text-foreground">${totalAmount}</p>
+                <p className="text-2xl font-bold text-foreground">₹{totalAmount}</p>
               </div>
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
                 <DollarSign className="w-6 h-6 text-primary" />
@@ -120,7 +120,7 @@ export default function PatientBilling() {
             <div className="flex items-start justify-between">
               <div>
                 <p className="text-muted-foreground text-sm mb-1">Paid Amount</p>
-                <p className="text-2xl font-bold text-success">${paidAmount}</p>
+                <p className="text-2xl font-bold text-success">₹{paidAmount}</p>
               </div>
               <div className="w-12 h-12 rounded-xl bg-success/10 flex items-center justify-center">
                 <CheckCircle className="w-6 h-6 text-success" />
@@ -132,7 +132,7 @@ export default function PatientBilling() {
             <div className="flex items-start justify-between">
               <div>
                 <p className="text-muted-foreground text-sm mb-1">Pending/Overdue</p>
-                <p className="text-2xl font-bold text-warning">${pendingAmount}</p>
+                <p className="text-2xl font-bold text-warning">₹{pendingAmount}</p>
               </div>
               <div className="w-12 h-12 rounded-xl bg-warning/10 flex items-center justify-center">
                 <AlertCircle className="w-6 h-6 text-warning" />
@@ -164,7 +164,7 @@ export default function PatientBilling() {
                     <td className="py-4 px-4 text-foreground font-medium">{invoice.id}</td>
                     <td className="py-4 px-4 text-muted-foreground">{invoice.date}</td>
                     <td className="py-4 px-4 text-muted-foreground">{invoice.description}</td>
-                    <td className="py-4 px-4 font-medium text-foreground">${invoice.amount}</td>
+                    <td className="py-4 px-4 font-medium text-foreground">₹{invoice.amount}</td>
                     <td className="py-4 px-4">
                       <span className={`inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium ${getStatusColor(invoice.status)}`}>
                         {getStatusIcon(invoice.status)}

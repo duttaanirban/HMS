@@ -13,34 +13,81 @@ Hospital Management System (HMS) is a comprehensive solution for managing hospit
 
 ## Getting Started
 
-### Prerequisites
-- Node.js (v14 or higher)
-- npm or yarn
-- Database (MySQL/PostgreSQL)
+# HMS (Hospital Management System)
 
-### Installation
+A modern hospital management frontend built with Vite, React, and TypeScript. The app provides UI for patient records, appointments, billing, dashboards for admins, doctors, and patients, and a collection of reusable UI components.
+
+## Key Features
+- Patient management
+- Appointment scheduling
+- Billing & invoices (displays in ₹)
+- Medical records and reports
+- Role-based dashboards (admin / doctor / patient)
+- Reusable UI components (Radix / Tailwind + shadcn-style)
+
+## Tech Stack
+- Frontend: React 18 + TypeScript
+- Build: Vite
+- Styling: Tailwind CSS
+- UI primitives: Radix + shadcn-inspired components
+- Icons: lucide-react
+- State & data: react-query
+- Forms & validation: react-hook-form, zod
+
+## Prerequisites
+- Node.js (14+ recommended; use latest LTS for best compatibility)
+- npm or yarn
+- Optional: a database (MySQL/Postgres) and backend API if you connect to a server
+
+## Quick Start
+1. Clone the repo and install dependencies
+
 ```bash
 git clone <repository-url>
 cd HMS
 npm install
 ```
 
-### Configuration
-Create a `.env` file in the root directory and configure your database connection.
+2. Start the dev server
 
-### Running the Application
 ```bash
-npm start
+npm run dev
 ```
 
-## Usage
-[Add usage instructions here]
+3. Build for production
+
+```bash
+npm run build
+```
+
+4. Preview production build locally
+
+```bash
+npm run preview
+```
+
+## Available Scripts
+- `npm run dev` — Start Vite dev server
+- `npm run build` — Build production assets
+- `npm run build:dev` — Build with development mode
+- `npm run preview` — Preview built assets
+- `npm run lint` — Run ESLint
+
+
+## Project Structure (high level)
+- `src/` — application source
+	- `components/` — shared UI components and layout
+	- `pages/` — route-based pages (auth, admin, doctor, patient)
+	- `hooks/` — custom React hooks
+	- `lib/` — utilities
+	- `main.tsx` — application entry
 
 ## Contributing
-Please fork the repository and submit pull requests.
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feat/your-feature`
+3. Commit your changes and push
+4. Open a pull request describing your changes
 
-## License
-[Specify your license]
+Please follow existing code style and run linting before creating PRs.
 
-## Support
-For issues or questions, please open an issue on the repository.
+

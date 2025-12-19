@@ -50,16 +50,16 @@ const activityTypeStyles = {
 const initialActivities: Activity[] = [
   { icon: UserPlus, text: "New patient registered: Emily Davis", time: "10 mins ago", type: "success" },
   { icon: Calendar, text: "12 new appointments scheduled", time: "30 mins ago", type: "info" },
-  { icon: DollarSign, text: "Payment received: $450", time: "1 hour ago", type: "success" },
+  { icon: DollarSign, text: "Payment received: ₹450", time: "1 hour ago", type: "success" },
   { icon: AlertCircle, text: "Low stock alert: Medical supplies", time: "2 hours ago", type: "warning" },
   { icon: Stethoscope, text: "Dr. Sarah Johnson marked present", time: "3 hours ago", type: "info" },
 ];
 
 const departmentStats = [
-  { name: "Cardiology", patients: 342, doctors: 8, revenue: "$28,450" },
-  { name: "Neurology", patients: 256, doctors: 6, revenue: "$22,100" },
-  { name: "Orthopedics", patients: 298, doctors: 7, revenue: "$25,800" },
-  { name: "Pediatrics", patients: 412, doctors: 10, revenue: "$18,900" },
+  { name: "Cardiology", patients: 342, doctors: 8, revenue: "₹28,450" },
+  { name: "Neurology", patients: 256, doctors: 6, revenue: "₹22,100" },
+  { name: "Orthopedics", patients: 298, doctors: 7, revenue: "₹25,800" },
+  { name: "Pediatrics", patients: 412, doctors: 10, revenue: "₹18,900" },
 ];
 
 export default function AdminDashboard() {
@@ -95,7 +95,7 @@ export default function AdminDashboard() {
     },
     { 
       title: "Monthly Revenue", 
-      value: "$124,580", 
+      value: "₹124,580", 
       icon: DollarSign, 
       variant: "accent" as const,
       trend: { value: 15, isPositive: true }
