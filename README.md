@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # HMS
 
 ## Overview
@@ -95,4 +95,3 @@ Please follow existing code style and run linting before creating PRs.
 =======
 ----------- WORK IN PROGRESS -----------
 It will be ready soon😜
->>>>>>> 142d03cf8bf25009029ff512b2b1d377a839252e
